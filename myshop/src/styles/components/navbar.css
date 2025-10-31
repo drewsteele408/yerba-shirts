@@ -1,0 +1,49 @@
+:root {
+  --blue: #2563eb;
+  --gray: #374151;
+  --border: #e5e7eb;
+}
+
+.navbar {
+  background: white;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.navbar-container {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--gray);
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.4rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav-links a:hover {
+  background: #f3f4f6;
+  color: var(--blue);
+}
+
+.nav-links a.active {
+  background: #eff6ff;
+  color: var(--blue);
+}
