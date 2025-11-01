@@ -1,73 +1,23 @@
-# React + TypeScript + Vite
+# Overview
+This is a project that I created to learn the React framework and gain more skills as a full-stack developer. I wanted to learn React since it is one of the most used frameworks in the full-stack web-development industry and I thought it would be a good project to get some experience. This app is a e-commerce website that sells all things yerba mate. From loose leaf yerba mate, to yerba mate gourds, to premium bombillas. I am very enthusiastic about mate and I would love to be able to open my own online store in the future so this is also to test how I could create my own online presence in the future. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[Website Demo](https://youtu.be/R3OQntNhiy0)
+[Brief Code Walkthrough](https://youtu.be/mRfcnJhkZlY)
 
-Currently, two official plugins are available:
+# Web Pages
+I have created a webpage for the home and products page and am working on finishing the cart and login pages. The goal is have a full functioning web app where you can purchase yerba mate products as well as sign up for a subscription to have mate delivered to your door every month or so. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Development Environment
+The tools and languages that I used in making this app include React, Vite, Typescript + JSX, HTML, and CSS.  
 
-## React Compiler
+# Useful Websites
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+{Make a list of websites that you found helpful in this project}
+* [Learning React](https://react.dev/learn)
+* [Learning TypeScript](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
+* [Learning React and TypeScript](https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/basic_type_example)
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# Future Work
+* Change the arrays to API calls to a database when fetching product information
+* Finish both cart and login pages to work to allow buying products and creating/signing in to your account
+* Add secure checkout functions that allow users to buy products
