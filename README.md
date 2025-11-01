@@ -1,8 +1,8 @@
 # Overview
 This is a project that I created to learn the React framework and gain more skills as a full-stack developer. I wanted to learn React since it is one of the most used frameworks in the full-stack web-development industry and I thought it would be a good project to get some experience. This app is a e-commerce website that sells all things yerba mate. From loose leaf yerba mate, to yerba mate gourds, to premium bombillas. I am very enthusiastic about mate and I would love to be able to open my own online store in the future so this is also to test how I could create my own online presence in the future. 
 
-[Website Demo](https://youtu.be/R3OQntNhiy0)
-[Brief Code Walkthrough](https://youtu.be/mRfcnJhkZlY)
+* [Website Demo](https://youtu.be/R3OQntNhiy0)
+* [Brief Code Walkthrough](https://youtu.be/mRfcnJhkZlY)
 
 # Web Pages
 I have created a webpage for the home and products page and am working on finishing the cart and login pages. The goal is have a full functioning web app where you can purchase yerba mate products as well as sign up for a subscription to have mate delivered to your door every month or so. 
