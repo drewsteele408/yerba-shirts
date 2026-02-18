@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import { useCart } from '../cart/CartContext';
 import '../../styles/pages/product-detail.css';
 
 // Eventually change this to get information from a database 
@@ -25,6 +26,7 @@ const sampleProducts = [
 export default function ProductDetailPage() {
     const { productId } = useParams();
     const navigate = useNavigate();
+    const { addToCart } = useCart();
     const [quantity, setQuantity] = useState(1);
 
     // Find the product from our sample data
@@ -42,8 +44,14 @@ export default function ProductDetailPage() {
     }
 
     const handleAddToCart = () => {
-        // TODO: Implement cart functionality
-        console.log(`Added ${quantity} of ${product.name} to cart`);
+        addToCart({
+            id: product.id,
+            name: product.name,
+            price: product.price,
+            image: product.image,
+            quantity,
+        });
+        setQuantity(1);
     };
 
     return (

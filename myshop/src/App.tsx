@@ -1,15 +1,16 @@
 import {Outlet} from "react-router-dom"
 import NavBar  from "./components/Navbar"
+import { CartProvider } from "./features/cart/CartContext"
 
 export default function App(){
   return(
-    <>
-    <NavBar />
-    <div>
-      <main>
-        <Outlet />
-      </main>
-    </div>
-    </>
+    <CartProvider>
+      <NavBar />
+      <div>
+        <main>
+          <Outlet />
+        </main>
+      </div>
+    </CartProvider>
   )
 }

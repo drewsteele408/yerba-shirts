@@ -47,3 +47,18 @@
   background: #eff6ff;
   color: var(--blue);
 }
+
+.cart-count {
+  display: inline-block;
+  background-color: #e74c3c;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-left: 4px;
+}
