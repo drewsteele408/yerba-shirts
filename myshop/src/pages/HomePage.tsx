@@ -44,17 +44,17 @@ export default function HomePage() {
                     <h2>Why Choose Yerba Mate?</h2>
                     <div className="benefits-grid">
                         <div className="benefit-card">
-                            <div className="icon">⚡</div>
+                            <div className="icon"></div>
                             <h3>Natural Energy</h3>
                             <p>Sustained focus without the jitters</p>
                         </div>
                         <div className="benefit-card">
-                            <div className="icon">🌿</div>
+                            <div className="icon"></div>
                             <h3>Rich in Nutrients</h3>
                             <p>Packed with vitamins & antioxidants</p>
                         </div>
                         <div className="benefit-card">
-                            <div className="icon">🤝</div>
+                            <div className="icon"></div>
                             <h3>Community</h3>
                             <p>Join the mate-drinking tradition</p>
                         </div>
